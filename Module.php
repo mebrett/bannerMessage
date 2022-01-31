@@ -36,7 +36,7 @@ class Module extends AbstractModule
         $siteSettings = $this->getServiceLocator()->get('Omeka\Settings\Site');
         $form = $event->getTarget();
 
-        $fieldset = new Fieldset('rrchnm_warn');
+        $fieldset = new Fieldset('banner_message');
         $fieldset->setLabel('Content warning'); // @translate
 
         $enabled = $siteSettings->get('content_banner_enable');
