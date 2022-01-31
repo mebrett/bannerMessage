@@ -1,5 +1,5 @@
 <?php
-namespace RRCHNMDonate;
+namespace bannerMessage;
 
 use Omeka\Module\AbstractModule;
 use Omeka\Permissions\Assertion\HasSitePermissionAssertion;
@@ -61,9 +61,9 @@ class Module extends AbstractModule
         $eventName = $event->getName();
         $view = $event->getTarget();
         if ($enabled == 1) {
-            $view->headLink()->appendStylesheet('https://rrchnm.org/donate/donate-style.css');
-            $view->headScript()->appendFile('https://rrchnm.org/donate/donate-positioning.js');
-            $view->htmlElement('body')->appendAttribute('class', 'rrchnm-donate-omeka-s');
+            $view->headLink()->appendStylesheet($view->assetUrl('warning-style.css', 'bannerMessage'));
+            $view->headScript()->appendFile($view->assetUrl('warning-positioning.js', 'bannerMessage'));
+            $view->htmlElement('body')->appendAttribute('class', 'content-warning-banner');
         }       
     }
 }

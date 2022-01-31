@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-#support-rrchnm-banner {
+#content-warning-banner {
   padding: .5rem 1rem;
   display: flex;
   align-items: center;
@@ -20,13 +20,13 @@
   margin: 0 0 0 1rem;
 }
 
-#support-rrchnm-banner .donate-button img {
+#content-warning-banner .donate-button img {
   height: 100%;
   width: auto;
   margin: 0;
 }
 
-#support-rrchnm-banner:after {
+#content-warning-banner:after {
   content: "";
   position: absolute;
   left: -9999px;
