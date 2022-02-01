@@ -61,8 +61,8 @@ class Module extends AbstractModule
         $eventName = $event->getName();
         $view = $event->getTarget();
         if ($enabled == 1) {
-            $view->headLink()->appendStylesheet($view->assetUrl('warning-style.css', 'bannerMessage'));
-            $view->headScript()->appendFile($view->assetUrl('warning-positioning.js', 'bannerMessage'));
+            $view->headLink()->appendStylesheet($view->assetUrl('warning-style.css', 'BannerMessage'));
+            $view->headScript()->appendFile($view->assetUrl('warning-positioning.js', 'BannerMessage'));
             $view->htmlElement('body')->appendAttribute('class', 'content-warning-banner');
         }       
     }
