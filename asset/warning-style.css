@@ -2,8 +2,8 @@
 
 #content-warning-banner {
   padding: .75rem 1rem;
-  display: flex;
   align-items: center;
+  text-align:center;
   justify-content: center;
   position: relative;
   font-family: "Open Sans", sans-serif;
